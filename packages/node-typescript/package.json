@@ -1,0 +1,55 @@
+{
+	"name": "",
+	"version": "0.0.0-semantic-release",
+	"description": "",
+	"keywords": [],
+	"license": "MIT",
+	"repository": "",
+	"author": "",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"main": "dist/main.js",
+	"module": "dist/main.js",
+	"types": "dist/main.d.ts",
+	"scripts": {
+		"build": "tsup",
+		"format": "prettier --ignore-path .gitignore --write '**/*.{js,json,md,ts}'",
+		"lint": "eslint --cache --fix --ignore-path .gitignore .",
+		"prepack": "pnpm build && clean-pkg-json",
+		"prepare": "husky install",
+		"test": "vitest",
+		"type-check": "tsc"
+	},
+	"engines": {
+		"node": ">=16.0.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.5.1",
+		"@commitlint/config-conventional": "^17.4.4",
+		"@theurgi/eslint-config": "^1.9.0",
+		"@types/node": "^18.15.11",
+		"clean-pkg-json": "^1.2.0",
+		"dotenv": "^16.0.3",
+		"eslint": "^8.38.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.1",
+		"prettier": "^2.8.7",
+		"tsup": "^6.7.0",
+		"typescript": "^5.0.4",
+		"vitest": "^0.30.0"
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	},
+	"eslintConfig": {
+		"extends": "@theurgi/eslint-config/node"
+	},
+	"lint-staged": {
+		"*.{js,ts}": "eslint --cache --fix",
+		"*.{js,json,md,ts}": "prettier --write"
+	}
+}

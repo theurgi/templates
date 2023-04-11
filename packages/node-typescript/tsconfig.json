@@ -9,9 +9,6 @@
 		"moduleResolution": "node16",
 		"noEmit": true,
 		"outDir": "./dist",
-		"paths": {
-			"*": ["node_modules/*", "src/types/*"]
-		},
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,

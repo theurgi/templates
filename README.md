@@ -8,7 +8,7 @@ This monorepo contains a collection of templates for various languages and frame
 
 ## Installation
 
-To create a new project using one of these templates, you can use degit to copy the repository without the Git history:
+To create a new project using one of these templates, you can use [degit](https://github.com/Rich-Harris/degit) to copy the repository without the Git history:
 
 First, make sure you have degit installed globally:
 

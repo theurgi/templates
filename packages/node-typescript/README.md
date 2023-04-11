@@ -40,7 +40,13 @@ After you've installed the template, you need to install the dependencies:
 pnpm install
 ```
 
-Once you've installed the dependencies, run the following command to set up Husky:
+Next, initialize a git:
+
+```bash
+git init
+```
+
+Once you've installed the dependencies and initialized a git repository, run the following command to set up Husky:
 
 ```bash
 pnpm run prepare

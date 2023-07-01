@@ -5,6 +5,7 @@ This monorepo contains a collection of templates for various languages and frame
 ## Available templates
 
 - [node-typescript](./packages/node-typescript/) - A Node.js TypeScript template with essential tools and configurations.
+- [turborepo-changesets](./packages/turborepo-changesets/) - A monorepo template using Turborepo pnpm workspaces and Changesets.
 
 ## Installation
 

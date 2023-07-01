@@ -1,10 +1,7 @@
 # turborepo-changesets
 
-A monorepo template using [Turborepo](https://github.com/vercel/turbo) pnpm workspaces and [Changesets](https://github.com/changesets/changesets). The template is set up with:
+A monorepo template using [Turborepo](https://github.com/vercel/turbo), pnpm workspaces, and [Changesets](https://github.com/changesets/changesets). In addition to the aforementioned, the template includes:
 
-- Turborepo
-- Changesets
-- pnpm workspaces
 - GitHub Actions
 - ESLint
 - Prettier
